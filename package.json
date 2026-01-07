@@ -1,0 +1,31 @@
+{
+  "name": "nutriscan",
+  "version": "1.0.0",
+  "description": "AI-powered food recognition and nutrition tracking platform with comprehensive Pakistani food database",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "setup-github": "bash setup-github.sh"
+  },
+  "keywords": [
+    "nutrition",
+    "food-tracking",
+    "pakistani-food",
+    "ai",
+    "machine-learning",
+    "react",
+    "nodejs"
+  ],
+  "author": "Masif Muhammad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masifmuhammad/NutriScan.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

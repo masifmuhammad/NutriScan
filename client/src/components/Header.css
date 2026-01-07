@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  color: var(--terracotta);
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.logo-text em {
+  font-style: normal;
+  color: var(--terracotta);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-xs);
+  background: var(--cream);
+  padding: 4px;
+  border-radius: 100px;
+}
+
+.nav-item {
+  padding: var(--space-sm) var(--space-lg);
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+  color: var(--ink);
+}
+
+.nav-item.active {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(26, 22, 18, 0.08);
+}
+
+.header-stats {
+  display: flex;
+  align-items: center;
+}
+
+.cal-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.cal-number {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cal-label {
+  font-size: 0.7rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    padding: var(--space-sm) var(--space-md);
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  
+  .nav-item {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.8rem;
+  }
+  
+  .cal-badge {
+    padding: var(--space-xs) var(--space-sm);
+  }
+  
+  .cal-number {
+    font-size: 1rem;
+  }
+}
+
