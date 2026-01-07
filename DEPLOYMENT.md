@@ -61,8 +61,9 @@ git push -u origin main
 5. Settings:
    - **Root Directory:** `client`
    - **Framework Preset:** Create React App
-   - **Build Command:** `npm run build`
+   - **Build Command:** `npm install && npm run build`
    - **Output Directory:** `build`
+   - **Install Command:** `npm install`
 6. Add Environment Variable:
    - **Name:** `REACT_APP_API_URL`
    - **Value:** Your backend URL (from Railway/Render)
